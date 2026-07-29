@@ -2,6 +2,12 @@
 
 An AI-based Sliding Puzzle Solver developed in Python using the A* Search and Breadth-First Search (BFS) algorithms. The project demonstrates how heuristic and graph search techniques can efficiently solve the classic NxN sliding puzzle.
 
+## State Space Representation
+
+The figure below illustrates the state space of the 8-puzzle, showing how different moves generate new puzzle configurations during the search process.
+
+![State Space](images/state_space.jpg)
+
 ## Features
 
 - A* Search Algorithm
@@ -22,7 +28,7 @@ An AI-based Sliding Puzzle Solver developed in Python using the A* Search and Br
 
 ## Project Structure
 
-```
+```text
 Sliding-Puzzle-A-Star-Solver/
 │
 ├── game_state.py
@@ -32,6 +38,7 @@ Sliding-Puzzle-A-Star-Solver/
 ├── .gitignore
 ├── README.md
 └── images/
+    └── state_space.jpg
 ```
 
 ## Installation
@@ -48,7 +55,7 @@ Move into the project folder:
 cd Sliding-Puzzle-A-Star-Solver
 ```
 
-Install the required package:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -62,13 +69,13 @@ Display the help menu:
 python sliding_puzzle.py -h
 ```
 
-Example:
+Run the project using the A* algorithm:
 
 ```bash
 python sliding_puzzle.py -n 3 --mx 10000 --heur manhattan --astar
 ```
 
-You can also solve the puzzle using BFS:
+Run the project using the BFS algorithm:
 
 ```bash
 python sliding_puzzle.py -n 3 --mx 10000 --heur manhattan --bfs
@@ -88,10 +95,10 @@ The project supports two heuristic functions:
 
 ## Future Improvements
 
-- Graphical User Interface (GUI)
-- Performance comparison between search algorithms
-- Additional heuristic functions
-- Visualization of the search process
+- Add a Graphical User Interface (GUI)
+- Support additional search algorithms
+- Compare algorithm performance
+- Add visualization of the search process
 
 ## Author
 
