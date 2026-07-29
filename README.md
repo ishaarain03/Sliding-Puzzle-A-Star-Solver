@@ -6,7 +6,7 @@ An AI-based Sliding Puzzle Solver developed in Python using the A* Search and Br
 
 The figure below illustrates the state space of the 8-puzzle, showing how different moves generate new puzzle configurations during the search process.
 
-![State Space](images/state%20space.jpg)
+![State Space](images/state_space.jpg)
 
 ## Features
 
